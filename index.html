@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fluxograma Interativo — IA para salvar a Mata Atlântica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Como a IA pode ajudar a salvar a Mata Atlântica</h1>
+    <p class="subtitle">Clique nos nós para ver explicações, exemplos e próximos passos.</p>
+  </header>
+
+  <main>
+    <section id="flow-container">
+      <!-- Nodes in vertical flow -->
+      <div class="node" id="node-1" data-title="Monitoramento por Satélite" data-content="IA processa imagens de satélite para detectar alterações na cobertura florestal em tempo quase real, identificando clareiras, queimadas e pistas de desmatamento." data-example="Ex.: Modelos de detecção que sinalizam alertas automáticos aos guardas-florestais.">
+        <h2>Monitoramento por Satélite</h2>
+        <div class="buttons">
+          <button class="btn-info">Como ajuda?</button>
+          <button class="btn-example">Exemplo</button>
+          <button class="btn-next" data-target="node-2">Próximo</button>
+        </div>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node" id="node-2" data-title="Detecção de Desmatamento" data-content="Redes neurais e detecção de mudanças comparam imagens ao longo do tempo para identificar desmatamento ilegal, com alta precisão e rapidez." data-example="Ex.: Alertas automáticos para ONGs e órgãos ambientais quando uma área é removida.">
+        <h2>Detecção de Desmatamento</h2>
+        <div class="buttons">
+          <button class="btn-info">Como ajuda?</button>
+          <button class="btn-example">Exemplo</button>
+          <button class="btn-next" data-target="node-3">Próximo</button>
+        </div>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node" id="node-3" data-title="Identificação de Espécies" data-content="Modelos de visão computacional identificam espécies de plantas e animais a partir de fotos, ajudando a mapear biodiversidade e priorizar áreas para conservação." data-example="Ex.: Apps que permitem que moradores identifiquem plantas e incrementem bases de dados científicas.">
+        <h2>Identificação de Espécies</h2>
+        <div class="buttons">
+          <button class="btn-info">Como ajuda?</button>
+          <button class="btn-example">Exemplo</button>
+          <button class="btn-next" data-target="node-4">Próximo</button>
+        </div>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node" id="node-4" data-title="Planejamento de Reflorestamento" data-content="IA otimiza onde plantar, quais espécies usar e em que sequência para maximizar sobrevivência, conectividade ecológica e captura de carbono." data-example="Ex.: Simulações que indicam corredores ecológicos e prioridades por custo-benefício.">
+        <h2>Planejamento de Reflorestamento</h2>
+        <div class="buttons">
+          <button class="btn-info">Como ajuda?</button>
+          <button class="btn-example">Exemplo</button>
+          <button class="btn-next" data-target="node-5">Próximo</button>
+        </div>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node" id="node-5" data-title="Fiscalização e Denúncia" data-content="Análise de áudio, imagens de câmeras e dados de sensores detecta atividade humana ilegal e encaminha provas para investigação." data-example="Ex.: Detectar motos em trilhas e enviar alertas a equipes locais.">
+        <h2>Fiscalização e Denúncia</h2>
+        <div class="buttons">
+          <button class="btn-info">Como ajuda?</button>
+          <button class="btn-example">Exemplo</button>
+          <button class="btn-next" data-target="node-6">Próximo</button>
+        </div>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node" id="node-6" data-title="Engajamento Comunitário" data-content="Chatbots, recomendações e plataformas de participação ajudam comunidades locais a registrar ocorrências, receber orientações e participar do monitoramento." data-example="Ex.: Bot que orienta agricultores sobre práticas sustentáveis e registra relatos.">
+        <h2>Engajamento Comunitário</h2>
+        <div class="buttons">
+          <button class="btn-info">Como ajuda?</button>
+          <button class="btn-example">Exemplo</button>
+          <button class="btn-next" data-target="node-7">Próximo</button>
+        </div>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node" id="node-7" data-title="Políticas e Tomada de Decisão" data-content="IA sintetiza dados complexos para apoiar políticas públicas, simular cenários e monitorar resultados das ações de conservação." data-example="Ex.: Painéis que mostram impactos de intervenções e orientam alocação de recursos.">
+        <h2>Políticas e Tomada de Decisão</h2>
+        <div class="buttons">
+          <button class="btn-info">Como ajuda?</button>
+          <button class="btn-example">Exemplo</button>
+          <button class="btn-next" data-target="node-1">Voltar ao início</button>
+        </div>
+      </div>
+    </section>
+
+    <aside id="info-panel" aria-live="polite">
+      <h3 id="panel-title">Clique em um nó</h3>
+      <p id="panel-content">Aqui aparecerão explicações e exemplos sobre como a IA ajuda.</p>
+      <div id="panel-actions">
+        <button id="btn-highlight">Destacar nó</button>
+        <button id="btn-close">Fechar</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Projeto demonstrativo — conteúdo educativo. Personalize para projetos reais.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
